@@ -22,7 +22,7 @@
                     <div class="card-body">
                         <h5 class="card-title">Rp.82.550.875</h5>
                         <p class="card-text">Laporan uang terkini</p>
-                        <a href="#" class="btn btn-dark">Lihat Detail</a>
+                        <a href="#" class="btn btn-dark">Lihat Detail Laporan</a>
                     </div>
                 </div>
             </div>
