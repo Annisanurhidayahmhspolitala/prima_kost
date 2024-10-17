@@ -30,7 +30,7 @@
                 <div class="card bg-primary text-white"> <!-- Warna biru -->
                     <div class="card-body">
                         <h5 class="card-title">06</h5>
-                        <p class="card-text">Akun Terdaftar</p>
+                        <p class="card-text">Akun yang Terdaftar</p>
                         <a href="#" class="btn btn-light">Lihat Detail</a>
                     </div>
                 </div>
