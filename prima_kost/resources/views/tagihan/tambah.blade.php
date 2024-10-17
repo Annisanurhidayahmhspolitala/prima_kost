@@ -10,7 +10,7 @@
         <label>Jumlah_tagihan</label>
         <input type="number" name="jumlah_tagihan" class="form-control mb-2">
         <label>Tanggal_Tagihan</label>
-        <input type="date" name="Tanggal_tagihan" class="form-control mb-2">
+        <input type="date" name="tanggal_tagihan" class="form-control mb-2">
         <label>Tenggat_Tagihan</label>
         <input type="date" name="tenggat_tagihan" class="form-control mb-2">
         <label>Id_Penghuni</label>
