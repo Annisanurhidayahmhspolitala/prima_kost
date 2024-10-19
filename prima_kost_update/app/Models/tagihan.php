@@ -21,4 +21,5 @@ class tagihan extends Model
         'tenggat_tagihan', 
         'id_penghuni'
     ];
+    
 }

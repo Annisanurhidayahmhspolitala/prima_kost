@@ -18,12 +18,13 @@
             <th>Tenggat_Tagihan</th>
             <th>Id_Penghuni</th>
             <th>Aksi</th>
+            <th>Pembayaran</th> <!-- Tambahkan kolom pembayaran -->
         </tr>
         @foreach ($tagihans as $no=>$data)
         <tr>
             <td>{{ $no+1 }}</td>
             <td>{{ $data->id_tagihan }}</td>
-            <td>{{ $data->jumlah_tagihan }}</td>
+            <td>Rp {{ number_format($data->jumlah_tagihan, 0, ',', '.') }}</td>
             <td>{{ $data->tanggal_tagihan }}</td>
             <td>{{ $data->tenggat_tagihan }}</td>
             <td>{{ $data->id_penghuni }}</td>
@@ -38,6 +39,12 @@
                 </button>
                 </form>
                 </div>
+            </td>
+            <td>
+                <!-- Tombol untuk melakukan pembayaran -->
+                <a href="{{ route('tagihan.bayar', $data->id_tagihan) }}" class="btn btn-sm btn-primary">
+                    <i class="fas fa-money-bill-wave"></i> Bayar
+                </a>
             </td>
         </tr>
         @endforeach

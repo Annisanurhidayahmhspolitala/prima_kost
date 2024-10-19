@@ -23,6 +23,7 @@ class PenghuniController extends Controller
     $penghunis->nik = $request->nik;
     $penghunis->no_hp_penghuni = $request->no_hp_penghuni;
     $penghunis->jenis_kelamin = $request->jenis_kelamin;
+    $penghunis->id_akun = $request->id_akun;
     $penghunis->id_kamar = $request->id_kamar;
     $penghunis->save();
 
@@ -41,6 +42,7 @@ class PenghuniController extends Controller
     $penghunis->nik = $request->nik;
     $penghunis->no_hp_penghuni = $request->no_hp_penghuni;
     $penghunis->jenis_kelamin = $request->jenis_kelamin;
+    $penghunis->id_akun = $request->id_akun;
     $penghunis->id_kamar = $request->id_kamar;
     $penghunis->update();
 

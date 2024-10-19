@@ -17,6 +17,7 @@ return new class extends Migration
             $table->string('nik')->unique();
             $table->string('no_hp_penghuni');
             $table->enum('jenis_kelamin', ['Laki-laki', 'Perempuan']);
+            $table->foreignId('id_akun')->nullable()->constrained('akuns', 'id_akun')->onDelete('cascade');
             $table->foreignId('id_kamar')->nullable()->constrained('kamars', 'id_kamar')->onDelete('cascade');
             $table->timestamps();
         });

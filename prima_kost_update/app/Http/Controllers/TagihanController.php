@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\tagihan;
+use App\Models\pembayaran;
 use Illuminate\Http\Request;
 
 class TagihanController extends Controller
@@ -49,5 +50,33 @@ class TagihanController extends Controller
         $tagihans = tagihan::find($id_tagihan);
         $tagihans->delete($id_tagihan);
         return redirect()->route('tagihan.tampil');
+    }
+
+    // Menampilkan form pembayaran
+    public function bayar($id_tagihan)
+    {
+        $tagihans = tagihan::findOrFail($id_tagihan);
+        return view('tagihan.bayar', compact('tagihans'));
+    }
+
+    // Memproses pembayaran
+    public function prosesBayar(Request $request, $id_tagihan)
+    {
+        $request->validate([
+            'jumlah_pembayaran' => 'required|numeric|min:1',
+            'metode_pembayaran' => 'required|string',
+        ]);
+
+        Pembayaran::create([
+            'jumlah_pembayaran' => $request->jumlah_pembayaran,
+            'metode_pembayaran' => $request->metode_pembayaran,
+            'tanggal_pembayaran' => now(),
+            'id_penghuni' => $request->id_penghuni,
+            'id_tagihan' => $id_tagihan,
+            'riwayat_pembayaran' => 'Pembayaran berhasil',
+        ]);
+    
+        // Redirect dengan pesan sukses
+        return redirect()->route('tagihan.tampil')->with('success', 'Pembayaran berhasil dilakukan.');
     }
 }

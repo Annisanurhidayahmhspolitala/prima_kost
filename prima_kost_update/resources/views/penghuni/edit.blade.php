@@ -15,6 +15,8 @@
         <input type="number" name="no_hp_penghuni" value="{{ $penghunis->no_hp_penghuni }}" class="form-control mb-2">
         <label>Jenis_Kelamin</label>
         <input type="text" name="jenis_kelamin" value="{{ $penghunis->jenis_kelamin }}" class="form-control mb-2">
+        <label>Id_Akun</label>
+        <input type="number" name="id_akun" value="{{ $penghunis->id_akun }}" class="form-control mb-2">
         <label>Id_Kamar</label>
         <input type="number" name="id_kamar" value="{{ $penghunis->id_kamar }}" class="form-control mb-2">
 

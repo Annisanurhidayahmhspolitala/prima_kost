@@ -5,8 +5,9 @@ use App\Http\Controllers\AkunController;
 use App\Http\Controllers\KamarController;
 use App\Http\Controllers\TagihanController;
 use App\Http\Controllers\PenghuniController;
+use App\Http\Controllers\PembayaranController;
 
-Route::get('/h', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 Route::view('/', 'beranda')->name('beranda');
@@ -43,3 +44,12 @@ Route::post('/tagihan/submit', [TagihanController::class, 'submit'])->name('tagi
 Route::get('/tagihan/edit/{id}', [TagihanController::class, 'edit'])->name('tagihan.edit');
 Route::post('/tagihan/update/{id}', [TagihanController::class, 'update'])->name('tagihan.update');
 Route::post('/tagihan/delete/{id}', [TagihanController::class, 'delete'])->name('tagihan.delete');
+// Route untuk menampilkan halaman pembayaran
+Route::get('/tagihan/{id}/bayar', [TagihanController::class, 'bayar'])->name('tagihan.bayar');
+// Route untuk memproses pembayaran
+Route::post('/tagihan/{id}/bayar', [TagihanController::class, 'prosesBayar'])->name('tagihan.prosesBayar');
+
+// Route untuk menampilkan halaman riwayat pembayaran
+Route::get('/pembayaran/riwayat', [PembayaranController::class, 'riwayat'])->name('riwayat_pembayaran.riwayat');
+
+

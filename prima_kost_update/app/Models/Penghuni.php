@@ -19,7 +19,8 @@ class Penghuni extends Model
         'nama_penghuni', 
         'nik', 
         'no_hp_penghuni', 
-        'jenis_kelamin', 
+        'jenis_kelamin',
+        'id_akun',
         'id_kamar'
     ];
 }

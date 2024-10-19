@@ -17,6 +17,7 @@
             <th>NIK</th>
             <th>No_Hp_Penghuni</th>
             <th>Jenis_Kelamin</th>
+            <th>Id_Akun</th>
             <th>Id_Kamar</th>
             <th>Aksi</th>
         </tr>
@@ -28,6 +29,7 @@
             <td>{{ $data->nik }}</td>
             <td>{{ $data->no_hp_penghuni }}</td>
             <td>{{ $data->jenis_kelamin }}</td>
+            <td>{{ $data->id_akun }}</td>
             <td>{{ $data->id_kamar }}</td>
             <td>
                 <div class="d-inline-flex">

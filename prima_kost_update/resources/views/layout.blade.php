@@ -57,7 +57,7 @@
                 <a href="{{ route('tagihan.tampil') }}" class="nav-link"><i class="fas fa-file-invoice-dollar"></i> Kelola Tagihan</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link"><i class="fas fa-history"></i> Riwayat Pembayaran</a>
+                <a href="{{ route('riwayat_pembayaran.riwayat') }}" class="nav-link"><i class="fas fa-history"></i> Riwayat Pembayaran</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link"><i class="fas fa-user-tie"></i> Pemilik Kost</a>
