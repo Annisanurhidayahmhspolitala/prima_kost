@@ -52,4 +52,5 @@ Route::post('/tagihan/{id}/bayar', [TagihanController::class, 'prosesBayar'])->n
 // Route untuk menampilkan halaman riwayat pembayaran
 Route::get('/pembayaran/riwayat', [PembayaranController::class, 'riwayat'])->name('riwayat_pembayaran.riwayat');
 
-
+//route crud profil
+Route::get()
