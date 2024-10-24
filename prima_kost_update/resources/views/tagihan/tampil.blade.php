@@ -8,7 +8,7 @@
     </div>
 
     <div class="card-body">
-        <table class="table table-bordered text-center">
+        <table class="table table-bordered table-primary text-center"> <!-- Kelas table-primary ditambahkan -->
             <thead>
                 <tr>
                     <th>No</th>
@@ -18,7 +18,7 @@
                     <th>Tenggat Tagihan</th>
                     <th>Id Penghuni</th>
                     <th>Aksi</th>
-                    <th>Pembayaran</th> <!-- Tambahan kolom pembayaran -->
+                    <th>Pembayaran</th>
                 </tr>
             </thead>
             <tbody>
@@ -44,7 +44,6 @@
                         </div>
                     </td>
                     <td>
-                        <!-- Tombol untuk melakukan pembayaran -->
                         <a href="{{ route('tagihan.bayar', $data->id_tagihan) }}" class="btn btn-sm btn-primary">
                             <i class="fas fa-money-bill-wave"></i> Bayar
                         </a>
