@@ -15,7 +15,9 @@
                     <th>Id_akun</th>
                     <th>Nama</th>
                     <th>Email</th>
+                    <th>Username</th>
                     <th>Password</th>
+                    <th>Level</th>
                     <th>Aksi</th>
                 </tr>
             </thead>
@@ -26,7 +28,9 @@
                     <td>{{ $data->id_akun }}</td>
                     <td>{{ $data->nama }}</td>
                     <td>{{ $data->email }}</td>
+                    <td>{{ $data->username }}</td>
                     <td>{{ $data->password }}</td>
+                    <td>{{ $data->level }}</td>
                     <td>
                         <div class="d-flex justify-content-center">
                             <a href="{{ route('akun.edit', $data->id_akun) }}" class="btn btn-sm btn-warning me-1">
