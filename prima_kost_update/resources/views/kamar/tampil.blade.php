@@ -9,8 +9,9 @@
     </div>
 </div>
 
-<table class="table table-bordered text-center">
-    <tr>
+<div class="card-body">
+    <table class="table table-bordered text-center"> 
+        <thead class="table-primary"> 
         <th>No</th>
         <th>Id_Kamar</th>
         <th>Info_Kamar</th>

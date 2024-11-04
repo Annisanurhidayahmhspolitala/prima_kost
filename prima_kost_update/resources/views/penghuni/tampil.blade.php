@@ -8,8 +8,8 @@
     </div>
 
     <div class="card-body">
-        <table class="table table-bordered text-center">
-            <thead>
+        <table class="table table-bordered text-center"> 
+            <thead class="table-primary"> 
                 <tr>
                     <th>No</th>
                     <th>Id Penghuni</th>
