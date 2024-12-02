@@ -11,9 +11,9 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::view('/', 'Beranda')->name('beranda');
+Route::view('/', 'beranda')->name('beranda');
 
-Route::view('/oks', 'layoutpenghuni.konten')->name('konten');
+Route::view('/oke', 'tpenghuni.berandapenghuni')->name('berandapenghuni');
 
 
 //route crud penghuni

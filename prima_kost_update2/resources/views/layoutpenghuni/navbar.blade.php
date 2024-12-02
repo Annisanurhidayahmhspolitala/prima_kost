@@ -22,7 +22,7 @@
             <!-- Left navbar links -->
             <ul class="navbar-nav">
         <li class="nav-item">
-                <a href="index3.html" class="nav-link">Beranda</a>
+                <a href="#" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item">
                 <a href="#" class="nav-link">Status Kamar</a>
