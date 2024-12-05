@@ -14,7 +14,7 @@ Route::get('/', function () {
 Route::view('/', 'beranda')->name('beranda');
 
 Route::view('/oke', 'tpenghuni.berandapenghuni')->name('berandapenghuni');
-
+Route::view('/statuskamar', 'tpenghuni.statuskamar')->name('statuskamar');
 
 //route crud penghuni
 Route::get('/penghuni', [PenghuniController::class, 'tampil'])->name('penghuni.tampil');

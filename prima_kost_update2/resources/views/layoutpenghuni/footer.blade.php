@@ -8,15 +8,10 @@
 </head>
 <body>
     <!-- Main Footer -->
-  <footer class="main-footer">
-    <!-- To the right -->
-    <div class="float-right d-none d-sm-inline">
-      Anything you want
-    </div>
-    <!-- Default to the left -->
-    <strong>Copyright &copy; 2014-2021 <a href="https://adminlte.io">AdminLTE.io</a>.</strong> All rights reserved.
-  </footer>
-</div>
+    <div class="footer text-center">
+      <p>Copyright ©2024 Kost Prima</p>
+      <p>Komplek Sejahtera Mandiri, Jalan No. 1, RT.12/RW.01, Angsau, Kec. Pelaihari, Kabupaten Tanah Laut, Kalimantan Selatan</p>
+  </div>
 <!-- ./wrapper -->
 
 <!-- REQUIRED SCRIPTS -->
