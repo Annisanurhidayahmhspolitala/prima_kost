@@ -22,22 +22,16 @@
             <!-- Left navbar links -->
             <ul class="navbar-nav">
         <li class="nav-item">
-                <a href="#" class="nav-link">Beranda</a>
+                <a href="{{ route('berandapenghuni') }}" class="nav-link">Beranda</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Status Kamar</a>
+                <a href="{{ route('statuskamar') }}" class="nav-link">Status Kamar</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Tagihan</a>
+                <a href="" class="nav-link">Tagihan</a>
             </li>
             <li class="nav-item">
-                <a href="#" class="nav-link">Riwayat Pembayaran</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Akun</a>
-            </li>
-            <li class="nav-item">
-                <a href="#" class="nav-link">Logout</a>
+                <a href="{{ route('profile') }}" class="nav-link">Akun</a>
             </li>
         </div>
         </div>

@@ -11,10 +11,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+
+
 Route::view('/', 'beranda')->name('beranda');
 
 Route::view('/oke', 'tpenghuni.berandapenghuni')->name('berandapenghuni');
 Route::view('/statuskamar', 'tpenghuni.statuskamar')->name('statuskamar');
+Route::view('/profile','tpenghuni.akunpenghuni.profile')->name('profile'); 
+Route::view('/plogin','login.plogin')->name('login'); 
 
 //route crud penghuni
 Route::get('/penghuni', [PenghuniController::class, 'tampil'])->name('penghuni.tampil');
