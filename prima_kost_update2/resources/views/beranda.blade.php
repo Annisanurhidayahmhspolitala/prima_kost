@@ -1,4 +1,4 @@
-  @extends('layouts.konten')
+@extends('layouts.konten')
   @section('konten')
       <!-- Content Header (Page header) -->
       <div class="content-header">
