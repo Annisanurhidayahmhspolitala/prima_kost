@@ -71,7 +71,7 @@
     <div class="container">
         <div class="header">
             <h1>Status Kamar - Kost Prima</h1>
-            <p>Kost minimalis dengan desain sederhana dan fungsional, cocok untuk kenyamanan Anda.</p>
+            <p>Kost minimalis dengan desain sederhana dan fungsional, yang cocok untuk kenyamanan Anda.</p>
         </div>
         <div class="room-grid">
             <?php
